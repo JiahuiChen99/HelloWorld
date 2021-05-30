@@ -1,11 +1,14 @@
 import './App.css';
+import NavBar from './components/Navbar';
+import {BrowserRouter} from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return (
-    <div className="App">
-      Hello World
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <NavBar></NavBar>
+        </BrowserRouter>
+    );
 }
 
 export default App;
