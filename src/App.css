@@ -1,6 +1,15 @@
+/** Web configuration **/
+.app {
+    min-height: 100vh;
+}
+
 /** Footer **/
 .footer {
+    position: fixed;
     bottom: 0 !important;
+    width: 100%;
+    background-color: #1A1A1D;
+    color: white;
     padding: 10px 10px 10px 10px;
 }
 
@@ -15,4 +24,25 @@
 
 .icons-footer {
     list-style: none;
+}
+
+/** Home **/
+#home {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 100px !important;
+    background-color: #001f2b;
+    color: white;
+}
+
+.home-greeting-text {
+    font-size: xx-large;
+}
+
+.home-greeting-height {
+    align-content: center;
+}
+
+.home-name {
+    color: #00c8ff;
 }
