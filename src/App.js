@@ -5,11 +5,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Components
 import NavBar from './components/Navbar';
+import Footer from "./components/Footer";
 
 function App() {
     return (
         <BrowserRouter>
             <NavBar/>
+            <Footer/>
         </BrowserRouter>
     );
 }

@@ -1,0 +1,18 @@
+/** Footer **/
+.footer {
+    bottom: 0 !important;
+    padding: 10px 10px 10px 10px;
+}
+
+.footer-info {
+    text-align: center !important;
+}
+
+/** Icons **/
+.icons_contact_colour {
+    color: black;
+}
+
+.icons-footer {
+    list-style: none;
+}
