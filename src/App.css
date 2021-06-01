@@ -5,12 +5,13 @@
 
 /** Footer **/
 .footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0 !important;
     width: 100%;
     background-color: #1A1A1D;
     color: white;
-    padding: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer-info {
@@ -30,19 +31,38 @@
 #home {
     position: relative;
     min-height: 100vh;
-    padding-top: 100px !important;
     background-color: #001f2b;
     color: white;
 }
 
-.home-greeting-text {
-    font-size: xx-large;
+#home-greeting {
+    min-height: 100vh;
 }
 
-.home-greeting-height {
-    align-content: center;
+.home-greeting {
+    height: 90vh;
 }
+
+.home-greeting-text {
+    font-size: xx-large;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
 
 .home-name {
     color: #00c8ff;
+}
+
+.home-go-to-introduction {
+    height: 10vh;
+}
+
+#home-introduction {
+    height: 100vh;
 }
