@@ -4,10 +4,10 @@ import { Row, Col, Container } from "react-bootstrap";
 // Image
 import bananyako from "../../Assets/bananyako.png";
 
-class HomeIntroduction extends React.Component{
+const HomeIntroduction = React.forwardRef((props, ref) => {
 
-    render() {
-        return(
+    return(
+        <div ref={ref}>
             <Container className="d-flex align-items-center" id="home-introduction">
                 <Row>
                     <Col md={4} className="d-flex align-items-center">
@@ -45,8 +45,8 @@ class HomeIntroduction extends React.Component{
                     </Col>
                 </Row>
             </Container>
-        );
-    }
-}
+        </div>
+    );
+});
 
 export default HomeIntroduction;
