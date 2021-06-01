@@ -2,6 +2,11 @@
 .app {
     min-height: 100vh;
 }
+/** Footer **/
+.navbar {
+    background-color: #020c1b;
+}
+
 
 /** Footer **/
 .footer {
@@ -31,7 +36,7 @@
 #home {
     position: relative;
     min-height: 100vh;
-    background-color: #001f2b;
+    background-color: #020c1b;
     color: white;
 }
 
@@ -56,7 +61,7 @@
 
 
 .home-name {
-    color: #00c8ff;
+    color: #64ffda;
 }
 
 .home-go-to-introduction {
@@ -68,7 +73,7 @@
 }
 
 .home-text-highlight {
-    color: #00b8ff;
+    color: #64ffda;
     font-weight: bold;
 }
 
