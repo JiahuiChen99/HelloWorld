@@ -3,7 +3,6 @@ import { Row, Col, Container } from "react-bootstrap";
 
 // Image
 import bananyako from "../../Assets/bananyako.png";
-import HomePage from "./Home";
 
 function HomeIntroduction () {
     return(
@@ -15,7 +14,6 @@ function HomeIntroduction () {
                 <Col md={8}>
                     <h1> LET ME <span className="home-text-highlight">INTRODUCE</span> MYSELF</h1>
                     <p className="home-text-introduction mt-5">
-                        {/*<div> In my free time I learn by myself for personal growth</div>*/}
                         I first started coding in my first year of <span className="home-text-highlight">Computer Engineering</span> major
                         <br/>
                         <br/>
@@ -40,7 +38,7 @@ function HomeIntroduction () {
                     </p>
 
                     <div className="d-flex justify-content-center mt-5">
-                        <a type="button" className="btn btn-lg btn-primary" href="/whoami"> Learn more about me </a>
+                        <a type="button" className="btn btn-lg btn-outline-primary" href="/whoami"> Learn more about me </a>
                     </div>
                 </Col>
             </Row>
