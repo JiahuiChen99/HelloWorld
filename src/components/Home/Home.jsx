@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
+import {IoCaretDown} from "react-icons/all";
+import HomeIntroduction from "./HomeIntroduction";
 
 // Image
-import pyong from "../../Assets/pyong.gif"
-import dev from "../../Assets/home_dev.svg"
-import HomeIntroduction from "./HomeIntroduction";
-import {IoCaretDown} from "react-icons/all";
+import pyong from "../../Assets/pyong.gif";
+import dev from "../../Assets/home_dev.svg";
 
 function HomePage () {
     function goToIntroduction() {
@@ -37,9 +37,8 @@ function HomePage () {
                     </Row>
                 </Container>
 
-                <Container id="home-introduction">
-                    <HomeIntroduction/>
-                </Container>
+                <HomeIntroduction/>
+
             </Container>
         </section>
     );
