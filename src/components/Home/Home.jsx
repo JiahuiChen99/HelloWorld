@@ -27,7 +27,7 @@ function HomePage() {
                                     <img className="ml-4" src={pyong} alt="Pyong!" />
                                 </Row>
                                 <Row>
-                                    <div> I AM <strong className="home-name">JIAHUI CHEN</strong></div>
+                                    <div className="home-whoami"> I AM <strong className="home-name">JIAHUI CHEN</strong></div>
                                 </Row>
                             </div>
                         </Col>

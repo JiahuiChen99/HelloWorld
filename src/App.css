@@ -59,6 +59,9 @@
     supported by Chrome, Edge, Opera and Firefox */
 }
 
+.home-whoami {
+    font-size: 5vw;
+}
 
 .home-name {
     color: #64ffda;
