@@ -3,6 +3,7 @@ import { Row, Col, Container } from "react-bootstrap";
 
 // Image
 import bananyako from "../../Assets/bananyako.png";
+import HomePage from "./Home";
 
 function HomeIntroduction () {
     return(
@@ -39,7 +40,7 @@ function HomeIntroduction () {
                     </p>
 
                     <div className="d-flex justify-content-center mt-5">
-                        <button type="button" className="btn btn-lg btn-primary"> Learn more about me </button>
+                        <a type="button" className="btn btn-lg btn-primary" href="/whoami"> Learn more about me </a>
                     </div>
                 </Col>
             </Row>
