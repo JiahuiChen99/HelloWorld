@@ -36,7 +36,7 @@ function HomePage() {
                         </Col>
                     </Row>
                     <Row className="d-flex justify-content-center home-go-to-introduction">
-                        <IoCaretDown size={90} onClick={scrollIntoView}/>
+                        <IoCaretDown title="Introduction" className="home-go-to-introduction-arrow" size={90} onClick={scrollIntoView}/>
                     </Row>
                 </Container>
 

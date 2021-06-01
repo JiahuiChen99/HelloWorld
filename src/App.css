@@ -68,6 +68,23 @@
     height: 10vh;
 }
 
+.home-go-to-introduction-arrow {
+    animation: pulsate 1.7s ease-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1.0;
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
 #home-introduction {
     height: 100vh;
 }
@@ -80,3 +97,4 @@
 .home-text-introduction {
     font-size: large;
 }
+
