@@ -66,3 +66,12 @@
 #home-introduction {
     height: 100vh;
 }
+
+.home-text-highlight {
+    color: #00b8ff;
+    font-weight: bold;
+}
+
+.home-text-introduction {
+    font-size: large;
+}
