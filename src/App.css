@@ -1,7 +1,8 @@
 /** Web configuration **/
-.app {
-    min-height: 100vh;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+
 /** Footer **/
 .navbar {
     background-color: #020c1b;
