@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import {IoCaretDown} from "react-icons/all";
+import { IoCaretDown } from "react-icons/all";
+import Particle from "../Particle";
 import HomeIntroduction from "./HomeIntroduction";
 
 // Image
@@ -18,6 +19,7 @@ function HomePage() {
     return (
         <section id="home">
             <Container fluid className="home">
+                <Particle/>
                 <Container id="home-greeting" className="d-flex flex-column justify-content-center">
                     <Row className="home-greeting d-flex align-items-center">
                         <Col md={7} className="home-greeting-text ">
