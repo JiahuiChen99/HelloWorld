@@ -112,14 +112,21 @@ body {
 
 /** Srollbar **/
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border-right: 2px #020c1b solid;
+    background-clip: padding-box;
 }
 
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Scrollbar background cannot be transparent */
 ::-webkit-scrollbar-track{
     background: #020c1b;
 }
