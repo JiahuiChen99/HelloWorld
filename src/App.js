@@ -7,6 +7,7 @@ import './App.css';
 import NavBar from './components/Navbar';
 import Footer from "./components/Footer";
 import HomePage from "./components/Home/Home";
+import Project from "./components/Project/Project";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <NavBar/>
                 <Switch>
                     <Route path="/" component={HomePage}/>
+                    <Route path="/projects" component={Project}/>
                 </Switch>
             <Footer/>
         </Router>
