@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 function NavBar() {
 
     return (
-        <Navbar expand="md" fixed="top" bg="dark" variant="dark">
+        <Navbar expand="md" fixed="top" className="navbar" variant="dark">
             <Container>
                 <Navbar.Brand href="/">Jiahui</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>

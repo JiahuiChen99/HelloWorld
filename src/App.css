@@ -1,7 +1,13 @@
 /** Web configuration **/
-.app {
-    min-height: 100vh;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
+
+/** Footer **/
+.navbar {
+    background-color: #020c1b;
+}
+
 
 /** Footer **/
 .footer {
@@ -31,8 +37,16 @@
 #home {
     position: relative;
     min-height: 100vh;
-    background-color: #001f2b;
+    background-color: #020c1b;
     color: white;
+}
+
+#particles-js {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
 }
 
 #home-greeting {
@@ -54,13 +68,33 @@
     supported by Chrome, Edge, Opera and Firefox */
 }
 
+.home-whoami {
+    font-size: 4vw;
+}
 
 .home-name {
-    color: #00c8ff;
+    color: #64ffda;
 }
 
 .home-go-to-introduction {
     height: 10vh;
+}
+
+.home-go-to-introduction-arrow {
+    animation: pulsate 1.7s ease-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1.0;
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
 }
 
 #home-introduction {
@@ -68,10 +102,11 @@
 }
 
 .home-text-highlight {
-    color: #00b8ff;
+    color: #64ffda;
     font-weight: bold;
 }
 
 .home-text-introduction {
     font-size: large;
 }
+
