@@ -14,7 +14,7 @@ body {
     /*position: fixed;*/
     bottom: 0 !important;
     width: 100%;
-    background-color: #1A1A1D;
+    background-color: #020c1b;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -110,3 +110,23 @@ body {
     font-size: large;
 }
 
+/** Srollbar **/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border-right: 2px #020c1b solid;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Scrollbar background cannot be transparent */
+::-webkit-scrollbar-track{
+    background: #020c1b;
+}
