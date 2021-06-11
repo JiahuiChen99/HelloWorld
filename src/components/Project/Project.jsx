@@ -26,10 +26,20 @@ class Project extends React.Component {
     componentDidMount() {
         axios(this.state.repositories)
             .then( response => {
+
+                // Remove forked projects
+                let projects = response.data;
+                projects.forEach( (project, index, projects) => {
+                    if ( project.fork) {
+                        projects.splice(index, 1);
+                    }
+                })
+
                 this.setState({
-                    projects : response.data
+                    projects : projects
                 });
         });
+
     }
 
     render() {
