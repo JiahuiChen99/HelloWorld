@@ -26,13 +26,17 @@ class ProjectCard extends React.Component {
         return(
             <div className="card bg-dark h-100" key={ this.props.id } >
                 <div className="card-body">
-                    <h5 className="card-title text-primary">{ this.props.project.name }</h5>
-                    <p className="card-text text-warning">{ this.props.project.description}</p>
+                    <h5 className="card-title font-weight-bold text-center">
+                        <span className="card-link" onClick={ () => window.open(this.props.project.html_url)}>
+                            { this.props.project.name }
+                        </span>
+                    </h5>
+                    <p className="card-text text-justify ">{ this.props.project.description}</p>
                 </div>
                 <div className="card-footer">
                     {
                         languages.forEach( (lang, index) => (
-                            <div className="card-text text-danger" key={index} onLoad={console.log(lang)}> { lang } </div>
+                            <div className="card-text text-danger" key={index} > { lang } </div>
                         ))
                     }
                 </div>
