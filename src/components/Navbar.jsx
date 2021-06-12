@@ -3,6 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
+import CV from "../Assets/Jiahui Chen CV.pdf";
+
 function NavBar() {
 
     return (
@@ -14,7 +16,7 @@ function NavBar() {
                     <Nav className="ml-auto">
                         <Nav.Link href="#about">Whoami</Nav.Link>
                         <Nav.Link href="/projects">Projects</Nav.Link>
-                        <Nav.Link href="#resume">Resume</Nav.Link>
+                        <Nav.Link href={ CV } >Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
