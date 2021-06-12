@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Particle from "../Particle";
 import axios from "axios";
+import ProjectCard from "./ProjectCard";
 
 class Project extends React.Component {
 
@@ -17,6 +18,7 @@ class Project extends React.Component {
                     'Content-Type': 'application/json;charset=UTF-8'
                 }
             },
+            projects : [],
         }
     }
 
@@ -24,26 +26,39 @@ class Project extends React.Component {
     componentDidMount() {
         axios(this.state.repositories)
             .then( response => {
-               // console.log(response.data);
-            });
+
+                // Remove forked projects
+                let projects = response.data;
+                projects.forEach( (project, index, projects) => {
+                    if ( project.fork) {
+                        projects.splice(index, 1);
+                    }
+                })
+
+                this.setState({
+                    projects : projects
+                });
+        });
+
     }
 
     render() {
         return (
             <section id="project">
                 <Particle/>
-                <Container className="d-flex justify-content-center">
-                    <Col md={12}>
-                        <Row className="d-flex align-items-center">
-                            <Col md={12} className="full-height d-flex align-items-center">
-                                <h1 className="project-featured-title">Featured Projects</h1>
-                                {/* Featured Projects Component */}
-                            </Col>
+                <Container className="d-flex justify-content-center mt-5">
+                    <Row md={12}>
+                        <h1 className="project-featured-title"><strong>Featured Projects</strong></h1>
+                        <Row>
+                            {
+                                this.state.projects.map( (project, index) => (
+                                    <Col className="my-5" md={4} key={index} >
+                                        <ProjectCard project={project} key={index}/>
+                                    </Col>
+                                ))
+                            }
                         </Row>
-                        <Row md={12} className="full-height">
-                            <h1 className="project-featured-title"><strong>Other Noteworthy Projects</strong></h1>
-                        </Row>
-                    </Col>
+                    </Row>
                 </Container>
             </section>
         );
