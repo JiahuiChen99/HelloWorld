@@ -3,6 +3,27 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/** Srollbar **/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border-right: 2px #020c1b solid;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Scrollbar background cannot be transparent */
+::-webkit-scrollbar-track{
+    background: #020c1b;
+}
+
 /** Footer **/
 .navbar {
     background-color: #020c1b;
@@ -110,23 +131,36 @@ body {
     font-size: large;
 }
 
-/** Srollbar **/
-::-webkit-scrollbar {
-    width: 10px;
+/** Project **/
+#project {
+    position: relative;
+    min-height: 100vh;
+    background-color: #020c1b;
+    color: white;
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    border-right: 2px #020c1b solid;
-    background-clip: padding-box;
+.full-height {
+    height: 100vh;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: rgba(255, 255, 255, 0.2);
+.project-featured-title {
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
 }
 
-/* Scrollbar background cannot be transparent */
-::-webkit-scrollbar-track{
-    background: #020c1b;
+.project-featured-title:before, .project-featured-title:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin: 0 .5em 0 -55%;
+    border-bottom: 1px solid #64ffda;
+    font-weight: bold;
+}
+
+.project-featured-title:after {
+    margin: 0 -55% 0 .5em;
 }

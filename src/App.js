@@ -7,13 +7,15 @@ import './App.css';
 import NavBar from './components/Navbar';
 import Footer from "./components/Footer";
 import HomePage from "./components/Home/Home";
+import Project from "./components/Project/Project";
 
 function App() {
     return (
         <Router>
             <NavBar/>
                 <Switch>
-                    <Route path="/" component={HomePage}/>
+                    <Route exact path="/" component={HomePage}/>
+                    <Route exact path="/projects" component={Project}/>
                 </Switch>
             <Footer/>
         </Router>

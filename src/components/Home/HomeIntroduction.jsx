@@ -36,7 +36,7 @@ const HomeIntroduction = React.forwardRef((props, ref) => {
                             but eventually I would like become a <span className="home-text-highlight">Full-stack</span> Software Engineer
                             <br/>
                             <br/>
-                            Thinking out the box is in my coded in my &lt;DNA/&gt;
+                            Thinking outside the box is coded in my &lt;DNA/&gt;
                         </p>
 
                         <div className="d-flex justify-content-center mt-5">

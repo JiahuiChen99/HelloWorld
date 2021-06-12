@@ -13,7 +13,7 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Nav.Link href="#about">Whoami</Nav.Link>
-                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="/projects">Projects</Nav.Link>
                         <Nav.Link href="#resume">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
