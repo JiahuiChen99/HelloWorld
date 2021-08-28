@@ -1,6 +1,6 @@
 import React from "react";
 
-class ExperiencePopUp extends React.Component {
+class ExperienceCard extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -25,4 +25,4 @@ class ExperiencePopUp extends React.Component {
     }
 }
 
-export default ExperiencePopUp;
+export default ExperienceCard;
