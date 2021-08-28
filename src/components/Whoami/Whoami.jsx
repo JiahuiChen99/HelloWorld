@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Particle from "../Particle";
 import "./Whoami.css"
+import Experience from "./Experience";
 
 function Whoami() {
 
@@ -10,7 +11,7 @@ function Whoami() {
         <section id="whoami">
             <Container fluid className="whoami">
                 <Particle/>
-                <div>Hello</div>
+                <Experience/>
             </Container>
         </section>
     );
