@@ -1,5 +1,6 @@
 .experience-card {
     min-height: 250px;
+    min-width: 100%;
 }
 
 .experience-card:hover{
