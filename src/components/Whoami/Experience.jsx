@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 function Experience() {
     const experience = [
         {
+            id: 0,
             title: "Teacher Assistant in Systems Administration & Design @ La Salle URL",
             type: "Internship",
             brief_desc: "In charge of designing & developing the projects, labs correction and helping students solve their duties",
@@ -11,6 +12,7 @@ function Experience() {
             description: "The 1st project consists in building a Linux Kernel Module (LKM) to be deployed in a Raspberry Pi Zero W. The device works as a character device driver where the user can perform reads and writes"
         },
         {
+            id: 1,
             title: "Build@Mercari (株式会社メルカリ)",
             type: "Apprenticeship",
             brief_desc: "Improve software engineering skills through the training",
