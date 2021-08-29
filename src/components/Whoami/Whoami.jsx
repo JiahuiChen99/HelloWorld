@@ -9,10 +9,8 @@ function Whoami() {
 
     return (
         <section id="whoami">
-            <Container fluid className="whoami">
-                <Particle/>
-                <Experience/>
-            </Container>
+            <Particle/>
+            <Experience/>
         </section>
     );
 }
