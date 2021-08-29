@@ -1,5 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import ExperienceCard from "./ExperienceCard";
+import {Col, Row} from "react-bootstrap";
 
 function Experience() {
     const experience = [
@@ -27,8 +29,16 @@ function Experience() {
     ];
 
     return (
-        <Container fluid>
-
+        <Container className="d-flex flex-column justify-content-center">
+            <Col>
+                {
+                    experience.map( (exp, id) => (
+                        <Row>
+                            <ExperienceCard key={id} experience={exp}/>
+                        </Row>
+                    ))
+                }
+            </Col>
         </Container>
     );
 }
