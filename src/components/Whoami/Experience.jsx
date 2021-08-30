@@ -34,20 +34,41 @@ class Experience extends React.Component {
             },
         ];
 
-    return (
-        <Container className="d-flex flex-column justify-content-center">
-            <h1 className="ml-3 mb-3 font-weight-bold">Experience</h1>
-            <Col>
+        this.state = {
+            showPopUp: false,
+            whichExperience: 0
+        }
+    }
+
+    onPopUp = (show, experienceID) => {
+        this.setState( () => {
+            return {
+                showPopUp: show,
+                whichExperience: experienceID
+            }
+        });
+    }
+
+    render() {
+        return (
+            <Container className="d-flex flex-column justify-content-center">
+                <h1 className="ml-3 mb-3 font-weight-bold">Experience</h1>
+                <Col>
+                    {
+                        this.experience.map( (exp, id) => (
+                            <Row key={id} >
+                                <ExperienceCard onPopUp={ this.onPopUp } key={id} experience={exp}/>
+                            </Row>
+                        ))
+                    }
+                </Col>
                 {
-                    experience.map( (exp, id) => (
-                        <Row key={id} >
-                            <ExperienceCard key={id} experience={exp}/>
-                        </Row>
-                    ))
+                    this.state.showPopUp ? <ExperiencePopUp experience={ this.experience[this.state.whichExperience] } /> : null
                 }
-            </Col>
-        </Container>
-    );
+            </Container>
+        );
+    }
+
 }
 
 export default Experience;

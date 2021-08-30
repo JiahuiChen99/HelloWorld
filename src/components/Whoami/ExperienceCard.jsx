@@ -13,7 +13,12 @@ class ExperienceCard extends React.Component {
     }
 
     togglePopUp() {
-        this.setState({ showPopUp: !this.state.showPopUp });
+        this.setState((prevState) => {
+            return { showPopUp: !prevState.showPopUp }
+        }, () => {
+            // Send data back to parent component once the toggle status is updated
+            this.props.onPopUp(this.state.showPopUp, this.props.experience.id);
+        });
     }
 
     render() {
