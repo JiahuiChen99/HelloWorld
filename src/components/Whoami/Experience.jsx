@@ -30,6 +30,7 @@ function Experience() {
 
     return (
         <Container className="d-flex flex-column justify-content-center">
+            <h1 className="ml-3 mb-3 font-weight-bold">Experience</h1>
             <Col>
                 {
                     experience.map( (exp, id) => (
