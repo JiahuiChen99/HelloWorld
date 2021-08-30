@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Particle from "../Particle";
 import "./Whoami.css"
 import Experience from "./Experience";
