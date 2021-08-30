@@ -4,6 +4,17 @@ import './ExperienceCard.css';
 class ExperienceCard extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            showPopUp: false
+        }
+
+        this.togglePopUp = this.togglePopUp.bind(this);
+    }
+
+    togglePopUp() {
+        this.setState({ showPopUp: !this.state.showPopUp });
+        console.log(this.props.id)
     }
 
     render() {
