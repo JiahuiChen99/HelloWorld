@@ -63,7 +63,7 @@ class Experience extends React.Component {
                     {
                         this.experience.map( (exp, id) => (
                             <Row key={id} >
-                                <ExperienceCard onPopUp={ this.onPopUp } key={id} experience={exp}/>
+                                <ExperienceCard showPopUp={ this.state.showPopUp } onPopUp={ this.onPopUp } key={id} experience={exp}/>
                             </Row>
                         ))
                     }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {createRef} from "react";
 import './ExperienceCard.css';
 
 class ExperienceCard extends React.Component {
@@ -6,7 +6,7 @@ class ExperienceCard extends React.Component {
         super(props);
 
         this.state = {
-            showPopUp: false
+            showPopUp: this.props.showPopUp
         }
 
         this.togglePopUp = this.togglePopUp.bind(this);
@@ -19,6 +19,12 @@ class ExperienceCard extends React.Component {
             // Send data back to parent component once the toggle status is updated
             this.props.onPopUp(this.state.showPopUp, this.props.experience.id);
         });
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.setState(() => {
+            return { showPopUp: nextProps.showPopUp}
+        })
     }
 
     render() {
