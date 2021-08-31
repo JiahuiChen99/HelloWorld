@@ -49,6 +49,13 @@ class Experience extends React.Component {
         });
     }
 
+    handleClose = () => {
+        // Reset parent toggle
+        this.setState((prevState) => {
+            return { showPopUp: !prevState.showPopUp }
+        })
+    }
+
     render() {
         return (
             <Container className="d-flex flex-column justify-content-center">
