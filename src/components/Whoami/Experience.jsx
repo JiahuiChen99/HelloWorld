@@ -62,9 +62,23 @@ class Experience extends React.Component {
                         ))
                     }
                 </Col>
-                {
-                    this.state.showPopUp ? <ExperiencePopUp experience={ this.experience[this.state.whichExperience] } /> : null
-                }
+                <Modal show={ this.state.showPopUp } onHide={ this.handleClose } centered size="lg" keyboard={true}>
+                    <Modal.Header closeButton>
+                        <Col>
+                            <Row>
+                                <Modal.Title className="font-weight-bold"> { this.experience[this.state.whichExperience].title } </Modal.Title>
+                            </Row>
+                            <Row>
+                                {
+                                    this.experience[this.state.whichExperience].tags.map((tag, index) => (
+                                        <span key={index} className="badge bg-secondary m-1 p-2"> { tag } </span>
+                                    ))
+                                }
+                            </Row>
+                        </Col>
+                    </Modal.Header>
+                    <Modal.Body><p> { this.experience[this.state.whichExperience].description } </p></Modal.Body>
+                </Modal>
             </Container>
         );
     }
