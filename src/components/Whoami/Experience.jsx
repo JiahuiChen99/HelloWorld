@@ -1,9 +1,8 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import {Col, Row} from "react-bootstrap";
+import {Col, Row, Modal} from "react-bootstrap";
 
 import ExperienceCard from "./ExperienceCard";
-import ExperiencePopUp from "./ExperiencePopUp";
 
 class Experience extends React.Component {
 
