@@ -164,3 +164,13 @@ body {
 .project-featured-title:after {
     margin: 0 -55% 0 .5em;
 }
+
+/* Resets some artifacts from Bootstrap */
+.modal-open {
+    overflow: inherit !important;
+    padding-right: 0 !important;
+}
+
+nav {
+    padding-right: 0 !important;
+}
