@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import {Col, Row, Modal} from "react-bootstrap";
-
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from "remark-gfm";
 import ExperienceCard from "./ExperienceCard";
 
 class Experience extends React.Component {
