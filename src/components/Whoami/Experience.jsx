@@ -84,7 +84,9 @@ class Experience extends React.Component {
                             </Row>
                         </Col>
                     </Modal.Header>
-                    <Modal.Body><p> { this.experience[this.state.whichExperience].description } </p></Modal.Body>
+                    <Modal.Body>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]} children={this.experience[this.state.whichExperience].description}/>
+                    </Modal.Body>
                 </Modal>
             </Container>
         );
