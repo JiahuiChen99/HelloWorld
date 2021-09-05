@@ -5,6 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
 import ExperienceCard from "./ExperienceCard";
 
+import { experiences } from "../../Assets/experiences";
+
 class Experience extends React.Component {
 
     constructor(props) {
@@ -17,7 +19,7 @@ class Experience extends React.Component {
                 type: "Internship",
                 brief_desc: "In charge of designing & developing the projects, labs correction and helping students solve their duties",
                 tags: ["C", "LKM", "Linux", "Raspberry Pi"],
-                description: "The 1st project consists in building a Linux Kernel Module (LKM) to be deployed in a Raspberry Pi Zero W. The device works as a character device driver where the user can perform reads and writes"
+                description: ""
             },
             {
                 id: 1,
@@ -25,12 +27,7 @@ class Experience extends React.Component {
                 type: "Apprenticeship",
                 brief_desc: "Improve software engineering skills through the training",
                 tags: [],
-                description: "Improve software engineering skills through the training\n" +
-                    "\n" +
-                    "Values from Build@Mercari:\n" +
-                    "- Study lots of Udemy courses\n" +
-                    "- Met new friends from around the world\n" +
-                    "- Mercari Engineering culture & DI philosophy"
+                description: ""
             },
         ];
 
@@ -38,6 +35,20 @@ class Experience extends React.Component {
             showPopUp: false,
             whichExperience: 0
         }
+
+    }
+
+    componentDidMount() {
+        experiences.map((value, index) => {
+            fetch(value).then(response => {
+                return response.text();
+            }).then(text => {
+                this.experience[index].description = text;
+            }).catch(err => {
+                console.log(err);
+            })
+            return null
+        });
     }
 
     onPopUp = (show, experienceID) => {
