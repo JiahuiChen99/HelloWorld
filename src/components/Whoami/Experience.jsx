@@ -80,7 +80,7 @@ class Experience extends React.Component {
                         ))
                     }
                 </Col>
-                <Modal scrollable={true} show={ this.state.showPopUp } onHide={ this.handleClose } centered size="lg" keyboard={true}>
+                <Modal className="modal-scroll" scrollable={true} show={ this.state.showPopUp } onHide={ this.handleClose } centered size="lg" keyboard={true}>
                     <Modal.Header closeButton>
                         <Col>
                             <Row>
