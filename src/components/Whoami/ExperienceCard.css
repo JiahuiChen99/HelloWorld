@@ -23,3 +23,11 @@
 .modal-scroll ::-webkit-scrollbar-track {
     background: transparent;
 }
+
+/* Custom styles for Photos */
+p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
