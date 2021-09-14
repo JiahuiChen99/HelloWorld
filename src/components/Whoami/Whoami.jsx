@@ -2,6 +2,7 @@ import React from "react";
 import Particle from "../Particle";
 import "./Whoami.css"
 import Experience from "./Experience";
+import Workflow from "./Workflow";
 
 function Whoami() {
 
@@ -10,6 +11,7 @@ function Whoami() {
         <section id="whoami">
             <Particle/>
             <Experience/>
+            <Workflow/>
         </section>
     );
 }
