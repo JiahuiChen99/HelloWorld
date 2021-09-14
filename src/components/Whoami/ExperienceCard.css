@@ -10,18 +10,13 @@
 
 /* Modal Scrollbar */
 .modal-scroll ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 .modal-scroll ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(203, 203, 203, 0.8);
     border-radius: 10px;
-    border-right: 2px #020c1b solid;
     background-clip: padding-box;
-}
-
-.modal-scroll ::-webkit-scrollbar-thumb:hover{
-    background: rgb(96, 96, 96);
 }
 
 /* Scrollbar background cannot be transparent */
