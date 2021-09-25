@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
 import ExperienceCard from "./ExperienceCard";
 
-import { experiences } from "../../Assets/experiences";
+import { experiences } from "../../Assets/data";
 
 class Experience extends React.Component {
 
