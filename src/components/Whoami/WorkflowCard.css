@@ -54,3 +54,7 @@
     border-radius: 10px;
     margin-left: 5px;
 }
+
+.tech-card:hover .tech-name {
+    color: #64ffda;
+}
