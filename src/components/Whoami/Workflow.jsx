@@ -14,7 +14,8 @@ class Workflow extends React.Component {
     render() {
         return (
             <Container className="mt-5">
-                <h1 className="ml-3 mb-3 font-weight-bold text-center">Programming Languages</h1>
+                <h1 className="ml-3 mb-3 font-weight-bold">Workflow</h1>
+                <h2 className="ml-3 mb-3 font-weight-bold text-center">Programming Languages</h2>
                 <Row className="row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
                     {
                         techStack.languages.map( (tech, index) => (
