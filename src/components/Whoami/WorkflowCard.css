@@ -1,0 +1,50 @@
+.tech-card {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px 1px rgba(100, 255, 218, 0.25);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    max-height: 248px;
+    max-width: 248px;
+}
+
+.tech-card-img {
+    width: 48px;
+    height: 48px;
+    left: 915.44px;
+    top: 198.56px;
+}
+
+.tech-card-name {
+    color: #64ffda;
+    left: 63.57%;
+    right: 34.32%;
+    top: 18.83%;
+    bottom: 79.9%;
+}
+
+.tech-card-text {
+    text-justify: auto;
+}
+
+.exp {
+    width: 150px;
+    height: 25px;
+}
+
+.exp-1 {
+    background-color: #FF0D0D;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.exp-2 {
+    background-color: #FF8E15;
+    border-radius: 10px;
+}
+
+.exp-3 {
+    background-color: #84ff50;
+    border-radius: 10px;
+    margin-left: 5px;
+}
