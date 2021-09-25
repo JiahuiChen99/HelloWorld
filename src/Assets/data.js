@@ -54,7 +54,7 @@ export const techStack = {
             experience: 0,
         }
     ],
-    "technologies" : [
+    "environment" : [
         {
             id: 6,
             language: false,
