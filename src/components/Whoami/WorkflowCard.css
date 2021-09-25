@@ -33,18 +33,18 @@
 }
 
 .exp-1 {
-    background-color: #FF0D0D;
+    background: rgba(255, 13, 13, 0.2);
     border-radius: 10px;
     margin-right: 5px;
 }
 
 .exp-2 {
-    background-color: #FF8E15;
+    background: rgba(255, 142, 21, 0.2);
     border-radius: 10px;
 }
 
 .exp-3 {
-    background-color: #84ff50;
+    background-color: rgba(105, 179, 76, 0.2);
     border-radius: 10px;
     margin-left: 5px;
 }
