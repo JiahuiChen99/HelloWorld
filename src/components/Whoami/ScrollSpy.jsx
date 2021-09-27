@@ -1,8 +1,19 @@
 import React from "react";
-import {Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import "./ScrollSpy.css";
 
 class ScrollSpy extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.whichSection = this.whichSection.bind(this);
+    }
+
+    whichSection(which) {
+        this.props.goToSection(which);
+    }
+
     render() {
         return (
             <Container className="right-menu d-flex flex-column font-weight-bold" fluid>
