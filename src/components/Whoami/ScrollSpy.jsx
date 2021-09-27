@@ -17,9 +17,15 @@ class ScrollSpy extends React.Component {
     render() {
         return (
             <Container className="right-menu d-flex flex-column font-weight-bold" fluid>
-                    <span> More about me </span>
-                    <span> Experience </span>
-                    <span> Workflow </span>
+                <span onClick={() => this.whichSection(0)}>
+                        More about me
+                </span>
+                <span onClick={() => this.whichSection(1)}>
+                        Experience
+                </span>
+                <span onClick={() => this.whichSection(2)}>
+                        Workflow
+                </span>
             </Container>
         )
     }
