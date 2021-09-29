@@ -41,7 +41,12 @@ class AboutMe extends React.Component {
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
                             <Card.Body>
-
+                                {
+                                    interests.manga.map( (interest, index) => {
+                                        return <InterestCard interest={ interest }/>
+                                        }
+                                    )
+                                }
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
