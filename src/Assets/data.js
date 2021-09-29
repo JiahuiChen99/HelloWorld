@@ -101,3 +101,104 @@ export const techStack = {
         }
     ]
 }
+
+export const interests = {
+    "manga": [
+        {
+            name: "Akatsuki no Yona",
+            original_name: "暁のヨナ",
+            image: "/interests/"
+        },
+        {
+            name: "Akame ga Kill!",
+            original_name: "アカメが斬る！",
+            image: "/interests/"
+        },
+        {
+            name: "Btooom!",
+            original_name: "",
+            image: "/interests/"
+        },
+        {
+            name: "Naruto",
+            original_name: "ナルト",
+            image: "/interests/"
+        },
+    ],
+    "anime": [
+        {
+            name: "Code Geass: Lelouch of the Rebellion",
+            original_name: "コードギアス 反逆のルルーシュ",
+            image: "/interests/"
+        },
+        {
+            name: "InuYasha",
+            original_name: "犬夜叉",
+            image: "/interests/"
+        },
+        {
+            name: "Your Name.",
+            original_name: "君の名は。",
+            image: "/interests/"
+        },
+        {
+            name: "Neon Genesis Evangelion",
+            original_name: "新世紀エヴァンゲリオン",
+            image: "/interests/"
+        }
+    ],
+    "games": [
+        {
+            name: "NieR:Automata",
+            original_name: "ニーア オートマタ",
+            image: "/interests/"
+        },
+        {
+            name: "Pokémon",
+            original_name: "ポケットモンスター",
+            image: "/interests/"
+        },
+        {
+            name: "Kirby",
+            original_name: "星のカービィシリーズ",
+            image: "/interests/"
+        },
+        {
+            name: "Super Mario",
+            original_name: "スーパーマリオ",
+            image: "/interests/"
+        },
+        {
+            name: "Sonic the Hedgedog",
+            original_name: "ソニック・ザ・ムービー",
+            image: "/interests/"
+        },
+    ],
+    "idols": [
+        {
+            name: "Watanabe Mayu",
+            original_name: "渡辺麻友",
+            image: "/interests/"
+        },
+        {
+            name: "Yabuki Nako",
+            original_name: "矢吹奈子",
+            image: "/interests/"
+        },
+        {
+            name: "Jang Wonyoung",
+            original_name: "장원영",
+            image: "/interests/"
+        },
+        {
+            name: "Kwon Eunbi",
+            original_name: "권은비",
+            image: "/interests/"
+        },
+        {
+            name: "Okada Nana",
+            original_name: "岡田奈々",
+            image: "/interests/"
+        }
+    ]
+}
