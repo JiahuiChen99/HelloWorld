@@ -2,6 +2,9 @@ import React from "react";
 import {Accordion, Card, Container, Row} from "react-bootstrap";
 import {BsBook, IoGameControllerOutline, IoMusicalNoteOutline, RiMovieLine} from "react-icons/all";
 
+import {interests} from "../../Assets/data";
+import InterestCard from "./InterestCard";
+
 class AboutMe extends React.Component {
 
     render() {
@@ -51,7 +54,12 @@ class AboutMe extends React.Component {
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
                             <Card.Body>
-
+                                {
+                                    interests.anime.map( (interest, index) => {
+                                            return <InterestCard interest={ interest }/>
+                                        }
+                                    )
+                                }
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
@@ -64,7 +72,12 @@ class AboutMe extends React.Component {
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">
                             <Card.Body>
-
+                                {
+                                    interests.games.map( (interest, index) => {
+                                            return <InterestCard interest={ interest }/>
+                                        }
+                                    )
+                                }
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
@@ -77,7 +90,12 @@ class AboutMe extends React.Component {
                         </Card.Header>
                         <Accordion.Collapse eventKey="3">
                             <Card.Body className="justify-content-center">
-
+                                {
+                                    interests.idols.map( (interest, index) => {
+                                        return <InterestCard interest={ interest }/>
+                                        }
+                                    )
+                                }
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
