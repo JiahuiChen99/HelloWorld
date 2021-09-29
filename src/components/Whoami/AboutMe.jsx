@@ -1,6 +1,6 @@
 import React from "react";
 import {Accordion, Card, Container, Row} from "react-bootstrap";
-import {BsBook, IoGameControllerOutline, IoMusicalNoteOutline, RiMovieLine} from "react-icons/all";
+import {BsBook, FiChevronDown, IoGameControllerOutline, IoMusicalNoteOutline, RiMovieLine} from "react-icons/all";
 
 import {interests} from "../../Assets/data";
 import InterestCard from "./InterestCard";
@@ -37,6 +37,7 @@ class AboutMe extends React.Component {
                             <Accordion.Toggle as={Card.Header} eventKey="0">
                                 <BsBook className="mr-2"/>
                                 Manga
+                                <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -55,6 +56,7 @@ class AboutMe extends React.Component {
                             <Accordion.Toggle as={Card.Header} eventKey="1">
                                 <RiMovieLine className="mr-2"/>
                                 Anime
+                                <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
@@ -73,6 +75,7 @@ class AboutMe extends React.Component {
                             <Accordion.Toggle as={Card.Header} eventKey="2">
                                 <IoGameControllerOutline className="mr-2"/>
                                 Games
+                                <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">
@@ -91,6 +94,7 @@ class AboutMe extends React.Component {
                             <Accordion.Toggle as={Card.Header} eventKey="3">
                                 <IoMusicalNoteOutline className="mr-2"/>
                                 Idols
+                                <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="3">
