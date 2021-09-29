@@ -69,8 +69,8 @@ class Experience extends React.Component {
 
     render() {
         return (
-            <Container className="d-flex flex-column justify-content-center">
-                <h1 className="ml-3 mb-3 font-weight-bold">Experience</h1>
+            <Container className="d-flex flex-column justify-content-center mt-5">
+                <h1 className="mb-3 font-weight-bold">Experience</h1>
                 <Col>
                     {
                         this.experience.map( (exp, id) => (
