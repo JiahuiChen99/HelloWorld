@@ -28,7 +28,8 @@ class AboutMe extends React.Component {
 
                 <h2>Interests</h2>
                 <p>
-                    Apart from doing side projects, I am also a big fan of Japanese MAGI culture
+                    Apart from doing side projects, I am also a big fan of Japanese MAGI culture. <br/>
+                    I also love watching J-Dramas & K-Dramas specially at night before sleeping 🧸
                 </p>
 
                 <Accordion>
