@@ -1,5 +1,5 @@
 import React from "react";
-import {Accordion, Card, Container, Row} from "react-bootstrap";
+import {Accordion, Card, Col, Container, Row} from "react-bootstrap";
 import {BsBook, FiChevronDown, IoGameControllerOutline, IoMusicalNoteOutline, RiMovieLine} from "react-icons/all";
 
 import {interests} from "../../Assets/data";
@@ -35,76 +35,100 @@ class AboutMe extends React.Component {
                     <Card className="bg-dark">
                         <Card.Header>
                             <Accordion.Toggle as={Card.Header} eventKey="0">
-                                <BsBook className="mr-2"/>
-                                Manga
+                                <BsBook className="mr-3"/>
+                                <span className="interest-first-char font-weight-bold">M</span>anga
                                 <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <Card.Body>
+                            <Card.Body className="justify-content-center">
+                                <Row className="row-cols-lg-4 row-cols-md-3 row-cols-sm-1 justify-content-center">
                                 {
                                     interests.manga.map( (interest, index) => {
-                                        return <InterestCard interest={ interest }/>
+                                        return (
+                                            <Col className="my-3">
+                                                <InterestCard interest={ interest }/>
+                                            </Col>
+                                        )
                                         }
                                     )
                                 }
+                                </Row>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card className="bg-dark">
                         <Card.Header>
                             <Accordion.Toggle as={Card.Header} eventKey="1">
-                                <RiMovieLine className="mr-2"/>
-                                Anime
+                                <RiMovieLine className="mr-3"/>
+                                <span className="interest-first-char font-weight-bold">A</span>nime
                                 <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
-                            <Card.Body>
+                            <Card.Body className="justify-content-center">
+                                <Row className="row-cols-lg-4 row-cols-md-3 row-cols-sm-1 justify-content-center">
                                 {
                                     interests.anime.map( (interest, index) => {
-                                            return <InterestCard interest={ interest }/>
+                                        return (
+                                            <Col className="my-3">
+                                                <InterestCard interest={ interest }/>
+                                            </Col>
+                                        )
                                         }
                                     )
                                 }
+                                </Row>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card className="bg-dark">
                         <Card.Header>
                             <Accordion.Toggle as={Card.Header} eventKey="2">
-                                <IoGameControllerOutline className="mr-2"/>
-                                Games
+                                <IoGameControllerOutline className="mr-3"/>
+                                <span className="interest-first-char font-weight-bold">G</span>ames
                                 <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">
-                            <Card.Body>
+                            <Card.Body className="justify-content-center">
+                                <Row className="row-cols-lg-4 row-cols-md-3 row-cols-sm-1 justify-content-center">
                                 {
                                     interests.games.map( (interest, index) => {
-                                            return <InterestCard interest={ interest }/>
+                                            return (
+                                                <Col className="my-3">
+                                                    <InterestCard interest={ interest }/>
+                                                </Col>
+                                            )
                                         }
                                     )
                                 }
+                                </Row>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                     <Card className="bg-dark">
                         <Card.Header>
                             <Accordion.Toggle as={Card.Header} eventKey="3">
-                                <IoMusicalNoteOutline className="mr-2"/>
-                                Idols
+                                <IoMusicalNoteOutline className="mr-3"/>
+                                <span className="interest-first-char font-weight-bold">I</span>dols
                                 <FiChevronDown className="float-right"/>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="3">
                             <Card.Body className="justify-content-center">
-                                {
-                                    interests.idols.map( (interest, index) => {
-                                        return <InterestCard interest={ interest }/>
-                                        }
-                                    )
-                                }
+                                <Row className="row-cols-lg-4 row-cols-md-3 row-cols-sm-1 justify-content-center">
+                                    {
+                                        interests.idols.map( (interest, index) => {
+                                            return (
+                                                <Col className="my-3">
+                                                    <InterestCard interest={ interest }/>
+                                                </Col>
+                                                )
+                                            }
+                                        )
+                                    }
+                                </Row>
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
