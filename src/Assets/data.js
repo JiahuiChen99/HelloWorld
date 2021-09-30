@@ -107,98 +107,98 @@ export const interests = {
         {
             name: "Akatsuki no Yona",
             original_name: "暁のヨナ",
-            image: "/interests/"
+            image: "/interests/AkatsukiNoYona.jpg"
         },
         {
             name: "Akame ga Kill!",
             original_name: "アカメが斬る！",
-            image: "/interests/"
+            image: "/interests/AkameGaKill.jpg"
         },
         {
             name: "Btooom!",
             original_name: "",
-            image: "/interests/"
+            image: "/interests/Btooom.jpg"
         },
         {
             name: "Naruto",
             original_name: "ナルト",
-            image: "/interests/"
+            image: "/interests/Naruto.jpg"
         },
     ],
     "anime": [
         {
             name: "Code Geass: Lelouch of the Rebellion",
             original_name: "コードギアス 反逆のルルーシュ",
-            image: "/interests/"
+            image: "/interests/CodeGeass.png"
         },
         {
             name: "InuYasha",
             original_name: "犬夜叉",
-            image: "/interests/"
+            image: "/interests/InuYasha.jpg"
         },
         {
             name: "Your Name.",
             original_name: "君の名は。",
-            image: "/interests/"
+            image: "/interests/YourName.jpg"
         },
         {
             name: "Neon Genesis Evangelion",
             original_name: "新世紀エヴァンゲリオン",
-            image: "/interests/"
+            image: "/interests/Evangelion.jpg"
         }
     ],
     "games": [
         {
             name: "NieR:Automata",
             original_name: "ニーア オートマタ",
-            image: "/interests/"
+            image: "/interests/NierAutomata.jpg"
         },
         {
             name: "Pokémon",
             original_name: "ポケットモンスター",
-            image: "/interests/"
+            image: "/interests/Pokemon.jpg"
         },
         {
             name: "Kirby",
             original_name: "星のカービィシリーズ",
-            image: "/interests/"
+            image: "/interests/Kirby.jpg"
         },
         {
             name: "Super Mario",
             original_name: "スーパーマリオ",
-            image: "/interests/"
+            image: "/interests/SuperMario.jpg"
         },
         {
             name: "Sonic the Hedgedog",
             original_name: "ソニック・ザ・ムービー",
-            image: "/interests/"
+            image: "/interests/Sonic.jpg"
         },
     ],
     "idols": [
         {
             name: "Watanabe Mayu",
             original_name: "渡辺麻友",
-            image: "/interests/"
+            image: "/interests/WatanabeMayu.jpg"
         },
         {
             name: "Yabuki Nako",
             original_name: "矢吹奈子",
-            image: "/interests/"
+            image: "/interests/YabukiNako.jpg"
         },
         {
             name: "Jang Wonyoung",
             original_name: "장원영",
-            image: "/interests/"
+            image: "/interests/JangWonyoung.jpg"
         },
         {
             name: "Kwon Eunbi",
             original_name: "권은비",
-            image: "/interests/"
+            image: "/interests/KwonEunbi.jpg"
         },
         {
             name: "Okada Nana",
             original_name: "岡田奈々",
-            image: "/interests/"
+            image: "/interests/OkadaNana.jpg"
         }
     ]
 }
