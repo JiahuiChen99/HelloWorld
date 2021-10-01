@@ -145,6 +145,11 @@ export const interests = {
             name: "Neon Genesis Evangelion",
             original_name: "新世紀エヴァンゲリオン",
             image: "/interests/Evangelion.jpg"
+        },
+        {
+            name: "Kimetsu no Yaiba",
+            original_name: "鬼滅の刃",
+            image: "/interests/KimetsuNoYaiba.jpg"
         }
     ],
     "games": [
