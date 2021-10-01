@@ -1,3 +1,7 @@
+.interest:hover {
+    cursor: pointer;
+}
+
 .interest-image {
     display: block;
     margin-left: auto;

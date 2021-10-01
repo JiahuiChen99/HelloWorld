@@ -35,7 +35,7 @@ class AboutMe extends React.Component {
                 <Accordion>
                     <Card className="bg-dark">
                         <Card.Header>
-                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                            <Accordion.Toggle as={Card.Header} eventKey="0" className="interest">
                                 <BsBook className="mr-3"/>
                                 <span className="interest-first-char font-weight-bold">M</span>anga
                                 <FiChevronDown className="float-right"/>
@@ -60,7 +60,7 @@ class AboutMe extends React.Component {
                     </Card>
                     <Card className="bg-dark">
                         <Card.Header>
-                            <Accordion.Toggle as={Card.Header} eventKey="1">
+                            <Accordion.Toggle as={Card.Header} eventKey="1" className="interest">
                                 <RiMovieLine className="mr-3"/>
                                 <span className="interest-first-char font-weight-bold">A</span>nime
                                 <FiChevronDown className="float-right"/>
@@ -85,7 +85,7 @@ class AboutMe extends React.Component {
                     </Card>
                     <Card className="bg-dark">
                         <Card.Header>
-                            <Accordion.Toggle as={Card.Header} eventKey="2">
+                            <Accordion.Toggle as={Card.Header} eventKey="2" className="interest">
                                 <IoGameControllerOutline className="mr-3"/>
                                 <span className="interest-first-char font-weight-bold">G</span>ames
                                 <FiChevronDown className="float-right"/>
@@ -110,7 +110,7 @@ class AboutMe extends React.Component {
                     </Card>
                     <Card className="bg-dark">
                         <Card.Header>
-                            <Accordion.Toggle as={Card.Header} eventKey="3">
+                            <Accordion.Toggle as={Card.Header} eventKey="3" className="interest">
                                 <IoMusicalNoteOutline className="mr-3"/>
                                 <span className="interest-first-char font-weight-bold">I</span>dols
                                 <FiChevronDown className="float-right"/>
