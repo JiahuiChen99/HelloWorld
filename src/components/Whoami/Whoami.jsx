@@ -4,6 +4,7 @@ import "./Whoami.css"
 import Experience from "./Experience";
 import Workflow from "./Workflow";
 import ScrollSpy from "./ScrollSpy";
+import AboutMe from "./AboutMe";
 
 function Whoami() {
     const moreaboutme = useRef(null)
@@ -30,6 +31,7 @@ function Whoami() {
             <Particle/>
             <ScrollSpy goToSection={goToSection}/>
             <section id="moreaboutme" ref={moreaboutme}>
+                <AboutMe/>
             </section>
             <section id="experience" ref={experience}>
                 <Experience/>

@@ -29,7 +29,7 @@ class ExperienceCard extends React.Component {
 
     render() {
         return(
-            <div className="experience-card bg-dark h-100 m-3 p-3 rounded" onClick={ this.togglePopUp }>
+            <div className="experience-card bg-dark h-100 my-3 p-3 rounded" onClick={ this.togglePopUp }>
                 <div className="card-body">
                     <div className="d-flex justify-content-between mb-3">
                         <h1 className="card-title font-weight-bold"> { this.props.experience.title}</h1>
