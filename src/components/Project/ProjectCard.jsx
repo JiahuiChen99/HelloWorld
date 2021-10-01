@@ -24,10 +24,10 @@ class ProjectCard extends React.Component {
         const languages = Object.keys(this.state.languages);
 
         return(
-            <div className="card bg-dark h-100" key={ this.props.id } >
+            <div className="card bg-dark h-100 project-card" key={ this.props.id } >
                 <div className="card-body">
                     <h5 className="card-title font-weight-bold text-center">
-                        <span className="card-link" onClick={ () => window.open(this.props.project.html_url)}>
+                        <span className="project-card-link" onClick={ () => window.open(this.props.project.html_url)}>
                             { this.props.project.name }
                         </span>
                     </h5>
