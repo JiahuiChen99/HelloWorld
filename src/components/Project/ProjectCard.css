@@ -1,0 +1,7 @@
+.project-card:hover {
+    box-shadow: 2px 10px 20px 1px rgba(255, 255, 255, 0.2);
+}
+
+.project-card-link {
+    cursor: pointer;
+}

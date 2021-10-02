@@ -1,0 +1,60 @@
+.tech-card {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px 1px rgba(100, 255, 218, 0.25);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    max-height: 248px;
+    max-width: 248px;
+    transition: all .1s ease-in-out;
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px 1px rgba(100, 255, 218, 0.45);
+}
+
+.tech-card-img {
+    width: 48px;
+    height: 48px;
+    left: 915.44px;
+    top: 198.56px;
+}
+
+.tech-card-name {
+    color: #64ffda;
+    left: 63.57%;
+    right: 34.32%;
+    top: 18.83%;
+    bottom: 79.9%;
+}
+
+.tech-card-text {
+    text-justify: auto;
+}
+
+.exp {
+    width: 150px;
+    height: 25px;
+}
+
+.exp-1 {
+    background: rgba(255, 13, 13, 0.2);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.exp-2 {
+    background: rgba(255, 142, 21, 0.2);
+    border-radius: 10px;
+}
+
+.exp-3 {
+    background-color: rgba(105, 179, 76, 0.2);
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.tech-card:hover .tech-name {
+    color: #64ffda;
+}
