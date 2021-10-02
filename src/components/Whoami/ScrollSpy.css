@@ -1,0 +1,22 @@
+.right-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 7rem;
+    right: 0;
+    width: fit-content;
+    margin-right: 5rem;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1600px) {
+    .right-menu {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .right-menu {
+        display: block;
+    }
+}

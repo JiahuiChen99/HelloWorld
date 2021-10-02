@@ -1,0 +1,19 @@
+.interest:hover {
+    cursor: pointer;
+}
+
+.interest-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    height: 300px;
+    width: 200px;
+}
+
+.interest-first-char {
+    color: #64ffda;
+}

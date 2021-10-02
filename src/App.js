@@ -8,6 +8,7 @@ import NavBar from './components/Navbar';
 import Footer from "./components/Footer";
 import HomePage from "./components/Home/Home";
 import Project from "./components/Project/Project";
+import Whoami from "./components/Whoami/Whoami";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={HomePage}/>
                     <Route exact path="/projects" component={Project}/>
+                    <Route exact path="/whoami" component={Whoami}/>
                 </Switch>
             <Footer/>
         </Router>
