@@ -39,7 +39,7 @@ const HomeIntroduction = React.forwardRef((props, ref) => {
                             Thinking outside the box is coded in my &lt;DNA/&gt;
                         </p>
 
-                        <div className="d-flex justify-content-center mt-5">
+                        <div className="d-flex justify-content-center mt-md-5 mb-sm-5 mb-5">
                             <a type="button" className="btn btn-lg btn-outline-primary" href="/whoami"> Learn more about me </a>
                         </div>
                     </Col>

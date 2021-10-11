@@ -1,5 +1,6 @@
 import React from "react";
 import './ExperienceCard.css';
+import {Col, Row} from "react-bootstrap";
 
 class ExperienceCard extends React.Component {
     constructor(props) {
@@ -31,14 +32,18 @@ class ExperienceCard extends React.Component {
         return(
             <div className="experience-card bg-dark h-100 my-3 p-3 rounded" onClick={ this.togglePopUp }>
                 <div className="card-body">
-                    <div className="d-flex justify-content-between mb-3">
-                        <h1 className="card-title font-weight-bold"> { this.props.experience.title}</h1>
-                        <span className="badge bg-secondary align-self-center text-uppercase ml-5">
-                            <h4 className="m-2 font-weight-bold">
-                                { this.props.experience.type }
-                            </h4>
-                        </span>
-                    </div>
+                    <Row className="d-flex flex-wrap mb-3">
+                        <Col className="col-12 col-lg-9">
+                            <h1 className="card-title font-weight-bold"> { this.props.experience.title }</h1>
+                        </Col>
+                        <Col className="col-lg-3">
+                            <span className="badge bg-secondary text-uppercase experience-card-badge">
+                                <h4 className="m-2 font-weight-bold">
+                                    { this.props.experience.type }
+                                </h4>
+                            </span>
+                        </Col>
+                    </Row>
 
                     <h4> { this.props.experience.brief_desc } </h4>
                 </div>

@@ -48,7 +48,7 @@ class AboutMe extends React.Component {
                                     interests.manga.map( (interest, index) => {
                                         return (
                                             <Col className="my-3">
-                                                <InterestCard interest={ interest }/>
+                                                <InterestCard key={ index } interest={ interest }/>
                                             </Col>
                                         )
                                         }
@@ -73,7 +73,7 @@ class AboutMe extends React.Component {
                                     interests.anime.map( (interest, index) => {
                                         return (
                                             <Col className="my-3">
-                                                <InterestCard interest={ interest }/>
+                                                <InterestCard key={ index } interest={ interest }/>
                                             </Col>
                                         )
                                         }
@@ -98,7 +98,7 @@ class AboutMe extends React.Component {
                                     interests.games.map( (interest, index) => {
                                             return (
                                                 <Col className="my-3">
-                                                    <InterestCard interest={ interest }/>
+                                                    <InterestCard key={ index } interest={ interest }/>
                                                 </Col>
                                             )
                                         }
@@ -123,7 +123,7 @@ class AboutMe extends React.Component {
                                         interests.idols.map( (interest, index) => {
                                             return (
                                                 <Col className="my-3">
-                                                    <InterestCard interest={ interest }/>
+                                                    <InterestCard key={ index } interest={ interest }/>
                                                 </Col>
                                                 )
                                             }
