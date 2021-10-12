@@ -47,7 +47,12 @@ body {
 
 /** Icons **/
 .icons_contact_colour {
-    color: black;
+    color: white;
+}
+
+.icons_contact_colour:hover {
+    color: #64ffda;
+    text-decoration: none;
 }
 
 .icons-footer {
