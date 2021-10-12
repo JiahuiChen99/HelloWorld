@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.experience-card-badge {
+    display: block;
+}
+
 /* Modal Scrollbar */
 .modal-scroll ::-webkit-scrollbar {
     width: 12px;
