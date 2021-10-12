@@ -120,6 +120,11 @@ export const interests = {
             image: "/interests/Btooom.jpg"
         },
         {
+            name: "Dragon Ball",
+            original_name: "ドラゴンボール",
+            image: "/interests/DragonBall.jpg"
+        },
+        {
             name: "Naruto",
             original_name: "ナルト",
             image: "/interests/Naruto.jpg"
@@ -150,6 +155,11 @@ export const interests = {
             name: "Kimetsu no Yaiba",
             original_name: "鬼滅の刃",
             image: "/interests/KimetsuNoYaiba.jpg"
+        },
+        {
+            name: "Made in Abyss",
+            original_name: "メイドインアビス",
+            image: "/interests/MadeInAbyss.jpg"
         }
     ],
     "games": [

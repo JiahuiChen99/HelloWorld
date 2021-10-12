@@ -37,7 +37,7 @@ function HomePage() {
                             <img className="img-fluid" src={dev} alt="dev"/>
                         </Col>
                     </Row>
-                    <Row className="d-flex justify-content-center home-go-to-introduction">
+                    <Row className="d-flex justify-content-center home-go-to-introduction home-chevron">
                         <IoCaretDown title="Introduction" className="home-go-to-introduction-arrow" size={90} onClick={scrollIntoView}/>
                     </Row>
                 </Container>
