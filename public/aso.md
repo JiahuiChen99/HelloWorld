@@ -9,11 +9,11 @@ Reading from the character device this will reply with a default message.
 The second module is a USB module. Students will have to solder a small PCB with 4 push buttons and 2 LEDs.
 For this part of the project, the buttons will only increment . Further functionalities will be developed and added for the 2nd project
 
-![ASOPCB](/ASOPCB.jpg)
+![ASOPCB](HelloWorld/ASOPCB.jpg)
 
-![GPIO Intefacing](/GPIO_interfacing.jpg)
+![GPIO Intefacing](HelloWorld/GPIO_interfacing.jpg)
 
-![Schematic](/schematic.png)
+![Schematic](HelloWorld/schematic.png)
 
 ##### **Material**
 - 1x PCB / Protoboard
