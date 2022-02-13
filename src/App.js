@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import { Routes, Route } from "react-router-dom";
 
 // Components
 import NavBar from './components/Navbar';
@@ -12,15 +12,15 @@ import Whoami from "./components/Whoami/Whoami";
 
 function App() {
     return (
-        <Router>
+        <div>
             <NavBar/>
-                <Switch>
-                    <Route exact path="/" component={HomePage}/>
-                    <Route exact path="/projects" component={Project}/>
-                    <Route exact path="/whoami" component={Whoami}/>
-                </Switch>
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/projects" element={<Project/>}/>
+                    <Route path="/whoami" element={<Whoami/>}/>
+                </Routes>
             <Footer/>
-        </Router>
+        </div>
     );
 }
 
