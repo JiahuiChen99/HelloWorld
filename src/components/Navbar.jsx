@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import { LinkContainer } from 'react-router-bootstrap';
 
 import CV from "../Assets/Jiahui Chen CV.pdf";
 
@@ -14,9 +15,13 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="/whoami">Whoami</Nav.Link>
-                        <Nav.Link href="/projects">Projects</Nav.Link>
-                        <Nav.Link href={ CV } >Resume</Nav.Link>
+                        <LinkContainer to="/whoami">
+                            <Nav.Link>Whoami</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/projects">
+                            <Nav.Link>Projects</Nav.Link>
+                        </LinkContainer>
+                        <Nav.Link href={CV}>Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
+import { LinkContainer } from 'react-router-bootstrap';
 
 // Image
 import bananyako from "../../Assets/bananyako.png";
@@ -39,9 +40,11 @@ const HomeIntroduction = React.forwardRef((props, ref) => {
                             Thinking outside the box is coded in my &lt;DNA/&gt;
                         </p>
 
-                        <div className="d-flex justify-content-center mt-md-5 mb-sm-5 mb-5">
-                            <a type="button" className="btn btn-lg btn-outline-primary" href="/whoami"> Learn more about me </a>
-                        </div>
+                        <LinkContainer to="/whoami">
+                            <div className="d-flex justify-content-center mt-md-5 mb-sm-5 mb-5">
+                                <a type="button" className="btn btn-lg btn-outline-primary"> Learn more about me </a>
+                            </div>
+                        </LinkContainer>
                     </Col>
                 </Row>
             </Container>
