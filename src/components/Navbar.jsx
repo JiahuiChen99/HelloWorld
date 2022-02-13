@@ -11,7 +11,7 @@ function NavBar() {
     return (
         <Navbar expand="md" fixed="top" className="navbar" variant="dark">
             <Container>
-                <Navbar.Brand href="/">Jiahui</Navbar.Brand>
+                <Navbar.Brand href="/HelloWorld">Jiahui</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
