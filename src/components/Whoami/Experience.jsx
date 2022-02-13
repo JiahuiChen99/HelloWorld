@@ -40,7 +40,7 @@ class Experience extends React.Component {
 
     componentDidMount() {
         experiences.map((value, index) => {
-            fetch(value).then(response => {
+            fetch(process.env.PUBLIC_URL + value).then(response => {
                 return response.text();
             }).then(text => {
                 this.experience[index].description = text;
