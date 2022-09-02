@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/HelloWorld/static/css/main.3c3af7ec.chunk.css",
-    "main.js": "/HelloWorld/static/js/main.4acaa624.chunk.js",
-    "main.js.map": "/HelloWorld/static/js/main.4acaa624.chunk.js.map",
-    "runtime-main.js": "/HelloWorld/static/js/runtime-main.f2dce350.js",
-    "runtime-main.js.map": "/HelloWorld/static/js/runtime-main.f2dce350.js.map",
-    "static/css/2.d6008dad.chunk.css": "/HelloWorld/static/css/2.d6008dad.chunk.css",
-    "static/js/2.6b010a39.chunk.js": "/HelloWorld/static/js/2.6b010a39.chunk.js",
-    "static/js/2.6b010a39.chunk.js.map": "/HelloWorld/static/js/2.6b010a39.chunk.js.map",
+    "main.css": "/HelloWorld/static/css/main.24095d66.chunk.css",
+    "main.js": "/HelloWorld/static/js/main.a4411b1f.chunk.js",
+    "main.js.map": "/HelloWorld/static/js/main.a4411b1f.chunk.js.map",
+    "runtime-main.js": "/HelloWorld/static/js/runtime-main.cd44f2b5.js",
+    "runtime-main.js.map": "/HelloWorld/static/js/runtime-main.cd44f2b5.js.map",
+    "static/css/2.c4e73993.chunk.css": "/HelloWorld/static/css/2.c4e73993.chunk.css",
+    "static/js/2.a7f1b8a3.chunk.js": "/HelloWorld/static/js/2.a7f1b8a3.chunk.js",
+    "static/js/2.a7f1b8a3.chunk.js.map": "/HelloWorld/static/js/2.a7f1b8a3.chunk.js.map",
+    "static/js/3.a0ca24a9.chunk.js": "/HelloWorld/static/js/3.a0ca24a9.chunk.js",
+    "static/js/3.a0ca24a9.chunk.js.map": "/HelloWorld/static/js/3.a0ca24a9.chunk.js.map",
     "index.html": "/HelloWorld/index.html",
-    "static/css/2.d6008dad.chunk.css.map": "/HelloWorld/static/css/2.d6008dad.chunk.css.map",
-    "static/css/main.3c3af7ec.chunk.css.map": "/HelloWorld/static/css/main.3c3af7ec.chunk.css.map",
-    "static/js/2.6b010a39.chunk.js.LICENSE.txt": "/HelloWorld/static/js/2.6b010a39.chunk.js.LICENSE.txt",
-    "static/media/Jiahui Chen CV.0055963c.pdf": "/HelloWorld/static/media/Jiahui Chen CV.0055963c.pdf",
+    "static/css/2.c4e73993.chunk.css.map": "/HelloWorld/static/css/2.c4e73993.chunk.css.map",
+    "static/css/main.24095d66.chunk.css.map": "/HelloWorld/static/css/main.24095d66.chunk.css.map",
+    "static/js/2.a7f1b8a3.chunk.js.LICENSE.txt": "/HelloWorld/static/js/2.a7f1b8a3.chunk.js.LICENSE.txt",
+    "static/media/Jiahui Chen CV.c56bda92.pdf": "/HelloWorld/static/media/Jiahui Chen CV.c56bda92.pdf",
     "static/media/bananyako.d206b737.png": "/HelloWorld/static/media/bananyako.d206b737.png",
-    "static/media/home_dev.359935c3.svg": "/HelloWorld/static/media/home_dev.359935c3.svg"
+    "static/media/home_dev.541f8179.svg": "/HelloWorld/static/media/home_dev.541f8179.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f2dce350.js",
-    "static/css/2.d6008dad.chunk.css",
-    "static/js/2.6b010a39.chunk.js",
-    "static/css/main.3c3af7ec.chunk.css",
-    "static/js/main.4acaa624.chunk.js"
+    "static/js/runtime-main.cd44f2b5.js",
+    "static/css/2.c4e73993.chunk.css",
+    "static/js/2.a7f1b8a3.chunk.js",
+    "static/css/main.24095d66.chunk.css",
+    "static/js/main.a4411b1f.chunk.js"
   ]
 }
